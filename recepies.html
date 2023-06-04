@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url(aboutback.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            padding-left: 150px;
+            padding-right: 80px;
+            padding-top: 20px;
+
+        }
+
+        .recepies .box-container {
+            gap: 80px;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .recepies .box-container .box {
+            position: relative;
+            flex: 0 0 300px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px black;
+            border-radius: 50px;
+        }
+
+        .recepies .box-container .box img{
+            height: 300px;
+        }
+        .recepies .box-container .box img:hover{
+            height:370px ;
+            width:400px ;
+            box-shadow: 0 20px 35px rgb(255, 0, 153);
+        }
+
+
+        .box-container .box .btn {
+            margin-left: 27%;
+            /* position: absolute; */
+            display: inline-block;
+            text-decoration: solid;
+            font-size: x-large;
+            padding: 10px 35px;
+            border: 2px solid rgb(61, 109, 197);
+            background-color: rgba(254, 246, 246, 0.925);
+            color: rgb(61, 5, 77);
+            font-family: arial;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .btn{
+            background: linear-gradient(to right, rgb(228, 70, 70), rgb(230, 207, 36));
+            
+        }
+        /* section nav ul li .btn:hover{
+          content: '';
+          background-color: #161512;
+          display: block ;
+          transition: 0.2 linear;
+} */
+        .btn:hover{
+            background: linear-gradient(to right, rgb(218, 32, 32), rgb(238, 211, 9));
+        }
+        .box-container .box h3{
+            text-align: center;
+            font-size: xx-large;
+        }
+        
+        h2{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 400;
+            font-family: Pacifico;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="recepies">
+        <div class="menu">
+            <h2>Our Recepies</h2>
+            <div class="box-container">
+                <div class="box">
+                    <img src="bhature.jpg" width="500px" heigth="400px">
+                    <h3>Chole Bhature</h3>
+                    <a href="https://www.vegrecipesofindia.com/chole-bhature/" class="btn">Try Now</a><br>
+
+                </div>
+
+
+                <div class="box">
+                    <img src="samosa.jpg" width="500px" heigth="400px">
+                    <h3>Samosa</h3>
+                    <a href="https://www.indianhealthyrecipes.com/samosa-recipe-make-samosa/" class="btn">Try Now</a><br>
+                </div>
+
+                <div class="box">
+                    <img src="vegroll.jpg" width="500px" heigth="400px">
+                    <h3>Fasso's Wrap</h3>
+                    <a href="https://www.archanaskitchen.com/fusion-wrap-recipe-mixed-vegetables-wrapped-in-tortilla" class="btn">Try Now</a><br>
+                </div>
+
+
+                <div class="box">
+                    <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        heigth="400px">
+                    <h3>Brownies</h3>
+                    <a href="https://www.loveandlemons.com/brownies-recipe/" class="btn">Try Now</a><br>
+                </div>
+
+
+                <div class="box">
+                    <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        heigth="400px">
+                    <h3>Pasta in Red Sauce</h3>
+                    <a href="https://www.sanjeevkapoor.com/Recipe/Pasta-in-Red-Sauce---SK-Khazana.html" class="btn">Try Now</a><br>
+                </div>
+
+
+                <div class="box">
+                    <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        width="500px" heigth="400px">
+                    <h3>Pizza Margherita</h3>
+                    <a href="https://www.bbcgoodfood.com/recipes/pizza-margherita-4-easy-steps" class="btn">Try Now</a><br>
+                </div>
+
+
+
+                <div class="box">
+                    <img src="frenchfries.jpg" width="500px" heigth="400px">
+                    <h3>French Fries</h3>
+                    <a href="https://www.indianhealthyrecipes.com/french-fries/" class="btn">Try Now</a><br>
+                </div>
+
+
+                <div class="box">
+                    <img src="muffins.jpg" width="370px" heigth="200px">
+                    <h3>Muffins</h3>
+                    <a href="https://www.joyofbaking.com/muffins/muffinrecipes.html" class="btn">Try Now</a><br>
+                </div>
+
+
+                <div class="box">
+                    <img src="burger.jpg" width="350px" heigth="400px">
+                    <h3>Hamburger</h3>
+                    <a href="https://www.myrecipes.com/recipe/classic-burger" class="btn">Try Now</a><br>
+                </div>
+
+
+                <div class="box">
+                    <img src="cake.jpg" width="350px" heigth="400px">
+                    <h3>Black Forest</h3>
+                    <a href="https://www.indianhealthyrecipes.com/eggless-black-forest-cake/" class="btn">Try Now</a><br>
+                </div>
+
+
+                <div class="box">
+                    <img src="https://img.freepik.com/premium-photo/chilli-paneer-dry-is-made-using-cottage-cheese-indo-chinese-food_466689-76965.jpg?w=2000" width="400px" heigth="400px">
+                    <h3>Paneer Chilli</h3>
+                    <a href="https://www.indianhealthyrecipes.com/chilli-paneer-recipe/" class="btn">Try Now</a><br>
+                </div>
+
+
+                <div class="box">
+                    <img src="https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        width="400px" heigth="400px">
+                    <h3>South Indian Dosas</h3>
+                    <a href="https://fooddilse.com/plain-dosa-with-sambar-recipe/.html" class="btn">Try Now</a><br>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

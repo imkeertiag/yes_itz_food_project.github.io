@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <style>
+
+      
+      body{
+        background-image:url(recepie1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+       h4{
+        font-family:'Pacifico' ;
+        font-size: x-large;
+        font-weight: 400;
+       }
+      section {
+        padding: 7px 2%;
+      }
+       .about{
+        display: flex;
+        /* flex-wrap: wrap; */
+        align-items: center;
+       }
+       .image{
+        position: relative;
+        padding: 0;
+       } 
+       .imgtext{
+        position: absolute;
+        top:400px;
+        padding: 10px;
+        font-size: xx-large;
+        font-weight: 700;
+        font-family: 'Dancing Script';
+        color: rgb(228, 224, 28);
+       }
+       img{
+        box-shadow: 0 0 200px black;
+        border-radius: 20px;
+       }
+       .content{
+        padding-left: 40px;
+       }
+       p{
+        font-family: Dancing Script;
+        font-size: x-large;
+        font-weight: 600;
+        color:rgb(62, 54, 122);
+       }
+       p span{
+        color:crimson;
+       }
+      a{
+        text-decoration: solid;
+        font-size: x-large; 
+        display:inline-block;
+        padding: 10px 35px;
+        border: 2px solid rgb(61, 109, 197);
+        background-color: rgba(254, 246, 246, 0.925);
+        color:rgb(61, 5, 77);
+        font-family:arial;
+        cursor:pointer;
+        border-radius: 10px;
+        font-weight:600;
+       }
+       a:hover{
+        background-color: rgba(38, 186, 186, 0.929);
+        text-decoration: underline;
+        transition: 1s;
+      }
+      @media(max-width:991px){
+
+        html{
+        font-size: 55%;
+        }
+        .image{
+          width: 300px;
+          height: 300px;
+        }
+        section{
+          padding: 5px;
+        }
+      }
+      @media (max-width:768px) {
+        html{
+        font-size: 35%;
+        }
+        .image{
+          width:200px;
+          height: 200px;
+        }
+        section{
+          padding: 3px;
+        } 
+      }
+      @media (max-width:350px) {
+        html{
+        font-size: 15%;
+        }
+        .image{
+          width: 120px;
+          height: 120px;
+        }
+        section{
+          padding: 1px;
+        } 
+      }
+    </style>
+</head>
+<body>
+   <section class="about" id="about">
+        <div class="image">
+             <img src="smilebread.jpg" width="670px" height="500px" >
+              <div class="imgtext" >
+              <h3>Cook with love<span>&#128151</span> for your Loved Ones......&#128525</h3>
+              </div>
+        </div>
+        <div class="content" >
+          
+          <h4>The most indespensible ingredient of all good home cooking : Love for those you are cooking for...&#128394 <br>- Sophia Loren</h4>
+          <p>A foody is a person who has an ardent or refined interest in food and who eats food not only out of hunger but also as a hobby.
+            When someone says the phrase, Home Cooking with Love, those words can have a variety of meanings. While food provides nourishment for the body, cooking can provide nourishment for the soul. A dish, recipe or meal can be a lovely way to connect friends, family or anyone around the table.
+            Our recipes primarily use fresh, unprocessed ingredients. We believe in a diet that includes a wide variety of foods: real butter and cream, extra virgin olive oil, eggs, lots of fruits and vegetables plus cake for dessert.<br>
+            <span>
+            First, does it work? Recipes need to be easy to follow and provide reliable results, every time.<br>
+            Second, is it delicious? Does the dish make us smile inside and out?<br> 
+            Third, is it worth the effort? Do we want to make it again (and again and again)? 
+            The answer is yes Ofcourse.
+            </span>
+          </p>
+          <div class="btn">
+            <a href="recepies.html">Recepies</a>
+           </div>
+        </div>
+      
+   </section>
+   <div id="preloader" ></div>
+</body>
+</html>

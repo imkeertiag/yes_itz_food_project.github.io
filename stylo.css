@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif*/
+}
+body{
+    background-image:url(abstract.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+display: flex;
+justify-content: space-around;
+align-items: centre;
+position: fixed;
+right: 0;
+left: 0;
+background: rgba(224, 192, 192, 0);
+box-shadow: 0 0 15px rgba(2, 1, 1, 0.912);
+z-index: 800;
+/* background-color: rgb(149, 222, 198); */
+}
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    /* margin-top: 10px; */
+    margin-left: 12px;
+  
+}
+.subheading{
+    display: none;
+}
+
+a:hover .subheading{
+    display:block;
+    position: relative;
+    background: rgb(238, 67, 5);
+    margin-top: 15px;
+    /* margin-left: -15px; */
+}
+ a:hover .subheading ul{
+    display:block;
+    margin: 10px;
+}
+a:hover .subheading ul li{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-bottom: 1px dotted #fff;
+    border-radius: 0;
+    text-align: left;
+}
+
+section nav ul li a{
+    text-decoration:solid;
+    /* color: rgb(219, 49, 145); */
+    color: rgb(226, 39, 170);
+    font-weight: 500;
+    font-size: 35px;
+    margin-left: 10px;
+    font-family:'Righteous';
+}
+section nav ul li a::after{
+content: '';
+width: 0;
+height: 3px;
+background: #fac031;
+display: block ;
+transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+.active{
+    color: #fac031;
+}
+section nav ul li a:hover{
+    color: #fac031;
+} 
+section nav .icon i{
+    font-size: 22px;
+    color: rgb(47, 41, 64);
+    margin: 39px 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: rgb(233, 28, 195);
+}
+
+@media(max-width:779px){
+    section nav ul li a{
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+}
+
+section  .main {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    top:350px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family:'Satisfy', cursive;
+
+    color: rgb(238, 67, 5);
+    margin-right: 30px;
+}
+section h2{
+    font-size:45px;
+    font-family:'Comfortaa';
+    color: rgb(126, 225, 27);
+}
+#carouselExampleFade{
+    margin-left: 200px;
+    margin-top: 120px;
+    /* margin-right: 100px; */
+    /* height: ; */
+}
+#imagechanges{
+    border-radius: 50px;
+    box-shadow: 10px 8px 3px rgba(1, 13, 17, 0.516);
+}
+#buttonchanges{
+margin-right: 800px;
+
+}

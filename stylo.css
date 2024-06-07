@@ -2,19 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: sans-serif*/
+    /* font-family: sans-serif */
 }
 body{
     background-image:url(abstract.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment:fixed;
+    /* background-attachment:fixed; */
 }
-/* html{
+html{
     scroll-behavior: smooth;
-} */
+}
 section{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -83,7 +83,8 @@ width: 0;
 height: 3px;
 background: #fac031;
 display: block ;
-transition: 0.2s linear;
+transition: 0.2s linear; 
+/* navigation bar hover effects */
 }
 section nav ul li a:hover::after{
     width: 100%;
@@ -133,7 +134,8 @@ section h2{
     color: rgb(126, 225, 27);
 }
 #carouselExampleFade{
-    margin-left: 200px;
+    align-items: left;
+    margin-left: 120px;
     margin-top: 120px;
     /* margin-right: 100px; */
     /* height: ; */
@@ -145,4 +147,108 @@ section h2{
 #buttonchanges{
 margin-right: 800px;
 
+}
+
+
+
+
+/* Media queries */
+
+/* Tablet and laptop screens */
+
+@media (max-width: 1024px) {
+    section nav {
+        flex-direction: column;
+        align-items: center;
+        height: 20px;
+    }
+    section nav ul li {
+        margin-left: 10px;
+    }
+    section nav .logo img {
+        width: 80px;
+    }
+    section .main {
+        top: 250px;
+        font-size: 30px;
+    }
+    #carouselExampleFade {
+        margin-left: 100px;
+        margin-top: 80px;
+    }
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    body{
+        background-image:url(abstract.jpg);
+        background-repeat: repeat;
+        background-size: 100%;
+        background-attachment:fixed;
+        margin-left: 10%;
+    }
+    section nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    section nav ul li {
+        margin-left: 0;
+    }
+    section nav .logo img {
+        width: 60px;
+    }
+    section .main {
+        top: 130px;
+        font-size: 16%;
+    }
+    #carouselExampleFade {
+        top: 105px ;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    #imagechanges {
+        border-radius: 30px;
+        box-shadow: 5px 4px 2px rgba(1, 13, 17, 0.516);
+    }
+    #buttonchanges {
+        margin-right: 400px;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+    section nav {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    section nav {
+        display: flex;
+        font-size: 32px;
+        color: rgb(47, 41, 64);
+        margin: 10px 2px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    section nav ul li {
+        margin-left: 0;
+        font-size: 30px;
+    }
+    section nav .logo img {
+        width: 40px;
+    }
+    section .main {
+        top: 150px;
+        font-size: 20px;
+    }
+    #carouselExampleFade {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    #imagechanges {
+        border-radius: 20px;
+        box-shadow: 3px 2px 1px rgba(1, 13, 17, 0.516);
+    }
+    #buttonchanges {
+        margin-right: 20px;
+    }
 }
